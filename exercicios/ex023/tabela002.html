@@ -11,11 +11,19 @@
         table  {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         thead, tfoot{
             background-color: rgb(151, 151, 151);
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(151, 151, 151);
+        }
+
         td,th {
             border: 1px solid black;
             padding: 10px;
@@ -24,6 +32,10 @@
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n) { /* Efeito zebrado*/
             background-color: lightgray;
         }
         td.num {
@@ -49,11 +61,11 @@
         <caption>População das unidades Federativas</caption>
         <thead>
             <th scope="col">Estado</th>
-            <th scope="col" style="width: 50px;">Pupolaçaõ</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tfoot>
             <th scope="row">Total de Habitantes</th> <!--Titulo-->
-            <td class="num">210.147.125</td> <!--Dado-->
+            <td class="num"><strong>210.147.125</strong></td> <!--Dado-->
         </tfoot>
         <tbody>
             <tr>
@@ -166,6 +178,10 @@
             </tr>
         </tbody>
     </table>
-    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illo exercitationem, esse optio nemo reiciendis, fuga eveniet excepturi, repellat praesentium sunt deserunt nihil veniam. Fuga dignissimos tenetur necessitatibus alias fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dolore illo aspernatur in nemo sint qui quo alias nisi laboriosam atque recusandae, quibusdam perferendis voluptates? Inventore vel dolorem ut nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem nemo, illum vitae cum laboriosam non dignissimos enim commodi eaque sequi, officia iusto, ex porro voluptatibus dolores veritatis deserunt culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum modi a ea, illum dolorum praesentium dolores suscipit quia tenetur voluptatem, nulla incidunt qui rerum, eius tempora earum non impedit quos?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illo exercitationem, esse optio nemo reiciendis, fuga eveniet excepturi, repellat praesentium sunt deserunt nihil veniam. Fuga dignissimos tenetur necessitatibus alias fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dolore illo aspernatur in nemo sint qui quo alias nisi laboriosam atque recusandae, quibusdam perferendis voluptates? Inventore vel dolorem ut nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem nemo, illum vitae cum laboriosam non dignissimos enim commodi eaque sequi, officia iusto, ex porro voluptatibus dolores veritatis deserunt culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum modi a ea, illum dolorum praesentium dolores suscipit quia tenetur voluptatem, nulla incidunt qui rerum, eius tempora earum non impedit quos?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illo exercitationem, esse optio nemo reiciendis, fuga eveniet excepturi, repellat praesentium sunt deserunt nihil veniam. Fuga dignissimos tenetur necessitatibus alias fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dolore illo aspernatur in nemo sint qui quo alias nisi laboriosam atque recusandae, quibusdam perferendis voluptates? Inventore vel dolorem ut nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem nemo, illum vitae cum laboriosam non dignissimos enim commodi eaque sequi, officia iusto, ex porro voluptatibus dolores veritatis deserunt culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum modi a ea, illum dolorum praesentium dolores suscipit quia tenetur voluptatem, nulla incidunt qui rerum, eius tempora earum non impedit quos?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illo exercitationem, esse optio nemo reiciendis, fuga eveniet excepturi, repellat praesentium sunt deserunt nihil veniam. Fuga dignissimos tenetur necessitatibus alias fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dolore illo aspernatur in nemo sint qui quo alias nisi laboriosam atque recusandae, quibusdam perferendis voluptates? Inventore vel dolorem ut nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem nemo, illum vitae cum laboriosam non dignissimos enim commodi eaque sequi, officia iusto, ex porro voluptatibus dolores veritatis deserunt culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum modi a ea, illum dolorum praesentium dolores suscipit quia tenetur voluptatem, nulla incidunt qui rerum, eius tempora earum non impedit quos?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illo exercitationem, esse optio nemo reiciendis, fuga eveniet excepturi, repellat praesentium sunt deserunt nihil veniam. Fuga dignissimos tenetur necessitatibus alias fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dolore illo aspernatur in nemo sint qui quo alias nisi laboriosam atque recusandae, quibusdam perferendis voluptates? Inventore vel dolorem ut nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem nemo, illum vitae cum laboriosam non dignissimos enim commodi eaque sequi, officia iusto, ex porro voluptatibus dolores veritatis deserunt culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum modi a ea, illum dolorum praesentium dolores suscipit quia tenetur voluptatem, nulla incidunt qui rerum, eius tempora earum non impedit quos?</p>
 </body>
 </html>
