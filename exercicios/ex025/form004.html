@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 5</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset {
+            width: 100px;
+            margin: auto;
+            margin-top: 12em;
+            border-radius: 10px;
+        }
+        legend {
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        .submit {
+            border-radius: 2px;
+        }
+        .submit:hover {
+            background-color: aqua;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <p>
+            <label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome de usuario" autocomplete="name">
+         </p>
+        <p>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail" required placeholder="Digite o seu email" autocomplete="email">
+        </p>
+        <p>
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel" required autocomplete="tel-national" placeholder="Digite o seu telefone" size="14" pattern="^[0-9]{4}-[0-9]{4,5}$">
+        </p>
+        <!--Estudar sobre RegEx-->
+    <p>
+        <input type="submit" class="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </fieldset>
+
+    </form>
+</body>
+</html>
